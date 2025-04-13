@@ -1,25 +1,28 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from "@/components/ui/button"
-import { LifecycleOverview } from "@/components/product-registration/lifecycle/overview"
-import { LifecycleStats } from "@/components/product-registration/lifecycle/stats"
-import { FormulationManagement } from "@/components/product-registration/lifecycle/formulation-management"
-import { StrengthDosageTracking } from "@/components/product-registration/lifecycle/strength-dosage-tracking"
-import { PresentationManagement } from "@/components/product-registration/lifecycle/presentation-management"
-import { RegulatoryMilestones } from "@/components/product-registration/lifecycle/regulatory-milestones"
-import { ChangeControlManagement } from "@/components/product-registration/lifecycle/change-control"
-import { MarketAuthorization } from "@/components/product-registration/lifecycle/market-authorization"
-import { DiscontinuationPlanning } from "@/components/product-registration/lifecycle/discontinuation-planning"
-import { LifecycleAnalytics } from "@/components/product-registration/lifecycle/analytics"
-import { Download, Plus, Filter, RefreshCw } from "lucide-react"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import { LifecycleOverview } from "@/components/product-registration/lifecycle/overview";
+import { LifecycleStats } from "@/components/product-registration/lifecycle/stats";
+import { FormulationManagement } from "@/components/product-registration/lifecycle/formulation-management";
+import { StrengthDosageTracking } from "@/components/product-registration/lifecycle/strength-dosage-tracking";
+import { PresentationManagement } from "@/components/product-registration/lifecycle/presentation-management";
+import { RegulatoryMilestones } from "@/components/product-registration/lifecycle/regulatory-milestones";
+import { ChangeControlManagement } from "@/components/product-registration/lifecycle/change-control";
+import { MarketAuthorization } from "@/components/product-registration/lifecycle/market-authorization";
+import { DiscontinuationPlanning } from "@/components/product-registration/lifecycle/discontinuation-planning";
+import { LifecycleAnalytics } from "@/components/product-registration/lifecycle/analytics";
+import { Download, Plus, Filter, RefreshCw } from "lucide-react";
 
 export default function LifecycleManagementPage() {
   return (
     <div className="flex-1 space-y-4 p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Lifecycle Management</h2>
+          <h2 className="text-3xl font-bold tracking-tight">
+            Lifecycle Management
+          </h2>
           <p className="text-muted-foreground">
-            Comprehensive management of product formulations, strengths, and presentations throughout their lifecycle
+            Comprehensive management of product formulations, strengths, and
+            presentations throughout their lifecycle
           </p>
         </div>
         <div className="flex space-x-2">
@@ -99,7 +102,8 @@ export default function LifecycleManagementPage() {
             <div className="col-span-full">
               <h3 className="text-lg font-medium">Integration Status</h3>
               <p className="text-sm text-muted-foreground">
-                Current status of integrations with external systems for lifecycle management
+                Current status of integrations with external systems for
+                lifecycle management
               </p>
             </div>
             {/* Integration cards would go here */}
@@ -107,5 +111,5 @@ export default function LifecycleManagementPage() {
         </TabsContent>
       </Tabs>
     </div>
-  )
+  );
 }

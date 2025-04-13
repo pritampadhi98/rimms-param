@@ -27,7 +27,12 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { UserActivity } from "@/components/dashboard/user-activity";
 import { UserIntegrationEngagement } from "@/components/dashboard/user-integration-engagement";
+import { DosageFormStats } from "@/components/product-registration/dosage-form/stats";
+import { LifecycleAnalytics } from "@/components/product-registration/lifecycle/analytics";
+import { LifecycleStats } from "@/components/product-registration/lifecycle/stats";
+import { ChangeControlStats } from "@/components/product-registration/change-control/stats";
 
+import { MarketAuthStats } from "@/components/market-authorization/market-auth-stats";
 export default function DashboardPage() {
   return (
     <div className="container mx-auto py-6">
@@ -331,6 +336,63 @@ export default function DashboardPage() {
                   <IntegrationStatus />
                 </CardContent>
               </Card> */}
+            </div>
+          </div>
+
+          <div className="w-full lg:col-span-4 ">
+            <div className="flex items-center justify-between space-y-2">
+              <div className="w-full">
+                <h2 className="text-3xl font-bold tracking-tight">
+                  Dosage Form Tracking
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                  Manage and monitor product formulations, strengths, and
+                  presentations
+                </p>
+              </div>
+            </div>
+            <DosageFormStats />
+          </div>
+
+          <div className="w-full lg:col-span-4">
+            <div className="flex items-center justify-between space-y-2">
+              <div className="w-full">
+                <h2 className="text-3xl font-bold tracking-tight">
+                  Lifecycle Management
+                </h2>
+                <p className="text-muted-foreground mb-4">
+                  Comprehensive management of product formulations, strengths,
+                  and presentations throughout their lifecycle
+                </p>
+              </div>
+            </div>
+
+            <LifecycleStats />
+          </div>
+
+          <div className="flex items-center justify-between space-y-2">
+            <div className="w-full">
+              <h2 className="text-3xl font-bold tracking-tight">
+                Change Management
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                Comprehensive management of product formulations, strengths, and
+                presentations throughout their lifecycle
+              </p>
+              <MarketAuthStats />
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between space-y-2">
+            <div className="w-full">
+              <h2 className="text-3xl font-bold tracking-tight">
+                Regulatory Compliance
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                Comprehensive management of product formulations, strengths, and
+                presentations throughout their lifecycle
+              </p>
+              <ChangeControlStats />
             </div>
           </div>
 
