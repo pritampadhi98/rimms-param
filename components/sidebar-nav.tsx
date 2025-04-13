@@ -176,7 +176,6 @@ export function SidebarNav() {
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
-
           <SidebarGroup>
             <SidebarGroupLabel>Regulatory Activities</SidebarGroupLabel>
             <SidebarGroupContent>
